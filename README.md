@@ -13,7 +13,7 @@ This Angular application allows users to search for GitHub users by username and
 - Dynamic skeleton loader UI while fetching data.
 - Changeable page size for repositories (default is 10).
 - Unit test cases for each component.
-- 
+  
 ## Challenge outline
 
 This challenge involves implementing application using github api. 
