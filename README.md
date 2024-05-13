@@ -1,15 +1,19 @@
 # Fyle Frontend Challenge
 
-## Who is this for?
+## Description
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+This Angular application allows users to search for GitHub users by username and view their basic information along with a list of their repositories. It fetches data from the GitHub API and provides a user-friendly interface to interact with.
 
-## Why work at Fyle?
+## Key Features
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
-
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
-
+- Search for GitHub users by username.
+- View user details such as name, location, bio, and Twitter username.
+- View user repositories with details such as name, description, and topics.
+- Pagination support for user repositories.
+- Dynamic skeleton loader UI while fetching data.
+- Changeable page size for repositories (default is 10).
+- Unit test cases for each component.
+- 
 ## Challenge outline
 
 This challenge involves implementing application using github api. 
@@ -20,18 +24,20 @@ You can see details of this challenge [here](https://fyleuniverse.notion.site/fy
 
 __Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
 
-## What happens next?
-
-You will hear back within 48 hours from us via email.
 
 ## Installation
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
+To run this project locally, follow these steps:
 
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   
 ### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+* npm install
+* ng build
+* ng serve
 
 ## Development server
 
