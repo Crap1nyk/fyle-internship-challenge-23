@@ -1,0 +1,19 @@
+<div class="flex flex-wrap justify-center">
+    <div class="w-96 h-60 border border-black m-5 p-5 flex flex-col">
+      <h2 class="text-blue-500 text-2xl mb-2 font-bold">{{ repoInfo.name }}</h2>
+      
+      <p class="mb-2">{{ repoInfo.description }}</p>
+      
+      <div class="grid grid-cols-3 gap-2">
+        <button
+          *ngFor="let topic of repoInfo.topics"
+          class="bg-blue-500 text-white py-1 px-2 rounded w-24"
+        >
+          {{ topic }}
+        </button>
+      </div>
+      
+    </div>
+  
+   
+  </div>

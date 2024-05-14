@@ -1,0 +1,22 @@
+<div class="bg-white text-black p-4 font-sans">
+    <div class="flex items-center justify-center">
+      <!-- Profile picture -->
+      <div class="rounded-full overflow-hidden mr-12">
+        <img src="{{ userinfo.avatar_url }}" alt=" " class="w-36 h-36" />
+      </div>
+  
+      <!-- User info -->
+      <div class="flex flex-col justify-center">
+        <div class="text-2xl font-bold mb-4">{{ userinfo.name }}</div>
+        <div class="text-lg mb-4">{{ userinfo.bio }}</div>
+        <div class="text-lg mb-4">{{ userinfo.location }}</div>
+        <div class="text-lg text-blue-500">
+          <a
+            href="https://twitter.com/{{ userinfo.twitter_username }}"
+            target="_blank"
+            >{{ userinfo.twitter_username }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

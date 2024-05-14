@@ -1,0 +1,23 @@
+<!-- pagination.component.html -->
+<div class="flex justify-center mt-4">
+    <button
+      class="border-2 border-black mr-4 text-gray-700 py-2 px-4 rounded-l"
+      (click)="getNewPageNumber(-1)"
+    >
+      Previous
+    </button>
+    <span class="bg-gray-200 text-black-700 py-2 pl-4">Page</span>
+    <button class="bg-gray-200 text-black-1000 font-bold py-2 pr-2 pl-4">
+      {{ currentPageNumber }}
+    </button>
+    <span class="bg-gray-200 text-black-700 py-2">of</span>
+    <button class="bg-gray-200 text-black-1000 py-2 pr-4 pl-2 font-bold">
+      {{ totalRepo }}
+    </button>
+    <button
+      class="border-2 border-black ml-4 text-gray-700 py-2 px-4 rounded-r"
+      (click)="getNewPageNumber(+1)"
+    >
+      Next
+    </button>
+  </div>
