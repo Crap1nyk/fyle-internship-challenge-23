@@ -1,0 +1,42 @@
+/* body-component.component.scss */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 24rem; /* equivalent to w-96 */
+    height: 15rem; /* equivalent to h-60 */
+    border: 1px solid black; /* equivalent to border border-black */
+    margin: 1.25rem; /* equivalent to m-5 */
+    padding: 1.25rem; /* equivalent to p-5 */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    color: #3b82f6; /* equivalent to text-blue-500 */
+    font-size: 1.5rem; /* equivalent to text-2xl */
+    margin-bottom: 0.5rem; /* equivalent to mb-2 */
+    font-weight: bold; /* equivalent to font-bold */
+  }
+  
+  .card-description {
+    margin-bottom: 0.5rem; /* equivalent to mb-2 */
+  }
+  
+  .topic-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem; /* equivalent to gap-2 */
+  }
+  
+  .topic-button {
+    background-color: #3b82f6; /* equivalent to bg-blue-500 */
+    color: #fff; /* equivalent to text-white */
+    padding: 0.25rem 0.5rem; /* equivalent to py-1 px-2 */
+    border-radius: 0.25rem; /* equivalent to rounded */
+    width: 6rem; /* equivalent to w-24 */
+  }

@@ -1,75 +1,85 @@
 <div class="relative ml-4">
-    <div class="relative">
-      <button
-        id="dropdownBtn"
-        type="button"
-        class="inline-flex justify-center w-50 rounded-full border border-gray-300 bg-gray-100 text-gray-700 px-4 py-2 transition duration-300 ease-in-out focus:outline-none focus:border-blue-500"
-        (click)="toggleDropdown()"
-      >
-        Page Size: {{ pageSize }}
-       
-        <svg class="w-4 h-4 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
-          <path
-            fill-rule="evenodd"
-            d="M10 12a1 1 0 01-.7-.29l-4-4a1 1 0 111.41-1.42L10 9.59l3.29-3.3a1 1 0 111.42 1.42l-4 4a1 1 0 01-.71.29z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
-      <!-- Dropdown options -->
-      <ul
-        id="dropdownOptions"
-        class="absolute right-0 mt-2 w-32 rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5 z-10 hidden"
-        [class.hidden]="!dropdownOpen"
-      >
-        <li class="py-1">
-          <a
-            href="#"
-            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-            (click)="getSelectedPageSize(10)"
-            >10</a
-          >
-        </li>
-        <li class="py-1">
-          <a
-            href="#"
-            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-            (click)="getSelectedPageSize(30)"
-            >30</a
-          >
-        </li>
-        <li class="py-1">
-          <a
-            href="#"
-            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-            (click)="getSelectedPageSize(50)"
-            >50</a
-          >
-        </li>
-        <li class="py-1">
-          <a
-            href="#"
-            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-            (click)="getSelectedPageSize(60)"
-            >60</a
-          >
-        </li>
-        <li class="py-1">
-          <a
-            href="#"
-            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-            (click)="getSelectedPageSize(90)"
-            >90</a
-          >
-        </li>
-        <li class="py-1">
-          <a
-            href="#"
-            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
-            (click)="getSelectedPageSize(100)"
-            >100</a
-          >
-        </li>
-      </ul>
-    </div>
+  <div class="relative">
+    <button style="background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;"
+      id="dropdownBtn"
+      type="button"
+      class="inline-flex justify-center w-32 rounded-md border border-gray-300 bg-gray-100 text-gray-700 px-4 py-2 transition duration-300 ease-in-out focus:outline-none focus:border-blue-500"
+      (click)="toggleDropdown()"
+    >
+      Page Size: {{ pageSize }}
+     
+      <svg class="w-4 h-4 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M10 12a1 1 0 01-.7-.29l-4-4a1 1 0 111.41-1.42L10 9.59l3.29-3.3a1 1 0 111.42 1.42l-4 4a1 1 0 01-.71.29z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <!-- Dropdown options -->
+    <ul
+      id="dropdownOptions"
+      class="absolute right-0 mt-2 w-32 rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5 z-10 hidden"
+      [class.hidden]="!dropdownOpen"
+    >
+      <li class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
+          (click)="getSelectedPageSize(10)"
+        >10</a
+        >
+      </li>
+      <li class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
+          (click)="getSelectedPageSize(20)"
+        >30</a
+        >
+      </li>
+      <li class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
+          (click)="getSelectedPageSize(40)"
+        >50</a
+        >
+      </li>
+      <li class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
+          (click)="getSelectedPageSize(80)"
+        >60</a
+        >
+      </li>
+      <li class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
+          (click)="getSelectedPageSize(90)"
+        >90</a
+        >
+      </li>
+      <li class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
+          (click)="getSelectedPageSize(100)"
+        >100</a
+        >
+      </li>
+    </ul>
   </div>
+</div>

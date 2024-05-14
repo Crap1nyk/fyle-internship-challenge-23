@@ -1,23 +1,31 @@
-<!-- pagination.component.html -->
-<div class="flex justify-center mt-4">
+<div class="pagination-container fixed bottom-0 left-0 w-full bg-gray-200 py-4">
+  <div class="flex items-center justify-center">
     <button
-      class="border-2 border-black mr-4 text-gray-700 py-2 px-4 rounded-l"
+      class="pagination-button bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-l shadow-md hover:bg-gray-100"
       (click)="getNewPageNumber(-1)"
     >
-      Previous
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 4.293a1 1 0 00-1.414 0L6.707 9.293a1 1 0 000 1.414L12.707 15.707a1 1 0 101.414-1.414L9.414 10l4.707-4.707a1 1 0 000-1.414z" clip-rule="evenodd" />
+      </svg>
+      <span class="hidden md:inline-block">Previous</span>
     </button>
-    <span class="bg-gray-200 text-black-700 py-2 pl-4">Page</span>
-    <button class="bg-gray-200 text-black-1000 font-bold py-2 pr-2 pl-4">
+    <span class="pagination-indicator mx-2">Page</span>
+    <button class="pagination-number bg-gray-300 text-black font-bold py-2 px-4 rounded shadow-md">
       {{ currentPageNumber }}
     </button>
-    <span class="bg-gray-200 text-black-700 py-2">of</span>
-    <button class="bg-gray-200 text-black-1000 py-2 pr-4 pl-2 font-bold">
+    <span class="pagination-indicator mx-2">of</span>
+    <button class="pagination-number bg-gray-300 text-black font-bold py-2 px-4 rounded shadow-md">
       {{ totalRepo }}
     </button>
     <button
-      class="border-2 border-black ml-4 text-gray-700 py-2 px-4 rounded-r"
+      class="pagination-button bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-r shadow-md hover:bg-gray-100"
       (click)="getNewPageNumber(+1)"
     >
-      Next
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 15.707a1 1 0 001.414 0L13.293 10a1 1 0 000-1.414L7.293 4.293a1 1 0 10-1.414 1.414L10.586 10 5.879 14.707a1 1 0 000 1.414z" clip-rule="evenodd" />
+      </svg>
+      <span class="hidden md:inline-block">Next</span>
     </button>
   </div>
+</div>
+

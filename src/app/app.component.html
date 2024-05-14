@@ -1,5 +1,32 @@
-<div class="grid h-screen place-items-center">
-  <div class="font-bold text-3xl">
-    Fyle Internship Challenge
+<div class="flex flex-row items-center justify-center">
+  <app-header [userinfo]="userinfo"></app-header>
+  <app-search-bar
+    (searchedTextEvent)="getSearchedText($event)"
+  ></app-search-bar>
+  <app-dropdown-menu
+    [pageSize]="pageSize"
+    (pageSizeEvent)="getPageSize($event)"
+  ></app-dropdown-menu>
+</div>
+
+<div *ngIf="isLoading">
+  <app-skeleton-loader></app-skeleton-loader>
+</div>
+
+<div *ngIf="!(userName && userinfo.name)">
+  <app-default-page [messageOnScreen]="messageOnScreen"></app-default-page>
+</div>
+
+<div *ngIf="userName && userinfo.name">
+  <!-- Add your body and pagination components here -->
+  <div>
+    <app-body [counterArray]="counterArray"></app-body>
+  </div>
+  <div class="mb-10">
+    <app-pagination
+      [totalRepo]="userinfo.public_repos"
+      [currentPageNumber]="currentPageNumber"
+      (newPageNumber)="getCurrentPageNumber($event)"
+    ></app-pagination>
   </div>
 </div>

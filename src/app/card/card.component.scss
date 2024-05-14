@@ -1,0 +1,26 @@
+/* body-component.component.scss */
+
+.card-container {
+    @apply flex flex-wrap justify-center;
+  }
+  
+  .card {
+    @apply w-96 h-60 border border-black m-5 p-5 flex flex-col;
+  }
+  
+  .card-title {
+    @apply text-blue-500 text-2xl mb-2 font-bold;
+  }
+  
+  .card-description {
+    @apply mb-2;
+  }
+  
+  .topic-buttons {
+    @apply grid grid-cols-3 gap-2;
+  }
+  
+  .topic-button {
+    @apply bg-blue-500 text-white py-1 px-2 rounded w-24;
+  }
+  
